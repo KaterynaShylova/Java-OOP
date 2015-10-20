@@ -7,13 +7,13 @@ public abstract class Phone {
 	protected int countCalls;
 	protected int countSMS;
 	protected String number;
-	protected String[] numberList = new String[100];
-	private int n = 0;
+	protected static Phone[] phoneList = new Phone[100];
+	private static int n = 0;
 
 	public Phone(String number) {
 		this.number = number;
 		System.out.println("Phone constructor");
-		numberList[n]= number;
+		phoneList[n]= this;
 		n++;
 	}
 
@@ -48,8 +48,8 @@ public abstract class Phone {
 	public void call(String number) {
 		System.out.println("Phone class is calling " + number);
 		for(int i=0; i<n; i++){
-			System.out.println(numberList[i]);
-			if(numberList[i].equals(number)) answer(number);
+			//System.out.println(numberList[i]);
+			if(phoneList[i].getNumber().equals(number)) phoneList[i].answer(number);
 		}
 	}
 

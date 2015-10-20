@@ -25,4 +25,9 @@ public class Nokia3310 extends Phone {
 		System.out.println("Nokia3310 class is sending sms " + message + " to " + number);
 		countSMS++;
 	}
+	
+	@Override
+	public void answer(String number) {
+		System.out.println(number + " Nokia3310 class is answering ");
+	}
 }

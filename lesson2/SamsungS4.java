@@ -24,4 +24,9 @@ public class SamsungS4 extends Phone {
 		System.out.println("SamsungS4 class is sending sms "+" Hello. " + message + " to " + number);
 		countSMS++;
 	}
+	
+	@Override
+	public void answer(String number) {
+		System.out.println(number + " SamsungS4 class is answering ");
+	}
 }
