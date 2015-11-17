@@ -6,16 +6,7 @@ import lesson10.HomeTask6.Entry;
 
 public class MainHashMap {
 
-	public static void main(String[] args) {
-//		HashMap2<String, String> h = new HashMap2<String, String>();
-//		
-//		h.put("1", "value1");
-//		h.put("2", "value2");
-//		
-//		System.out.println(h.size());
-//		System.out.println(h.get("1"));
-//		System.out.println(h.get("2"));
-		
+	public static void main(String[] args) {		
 		HomeTask6 <String, String> s = new HomeTask6 <String, String>();
 		
 		s.put("1", "value1");
