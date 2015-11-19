@@ -24,8 +24,7 @@ public class HomeTask5 {
 	}
 	
 	public static void find(Integer number){
-		Set<Integer> set = map.keySet();
-		if(set.contains(number))
+		if(map.containsKey(number))
 			System.out.println("Есть пользователь с таким номером");
 		else System.out.println("Пользователь не найден");
 	}
